@@ -1,15 +1,15 @@
 package jp.co.internous.action;
 
 public class Test {
+
 	public static void main(String[]args){
 
 		Person taro=new Person();
 		taro.name="taro";
 		taro.age=18;
+
 		System.out.println(taro.name);
 		System.out.println(taro.age);
-
-
 
 		Person jiro=new Person("jiro",20);
 		System.out.println(jiro.name);
@@ -23,11 +23,9 @@ public class Test {
 		System.out.println(nanasi.name);
 		System.out.println(nanasi.age);
 
-		Person hanako=new Person("hanako",17);
+		Person hanako=new Person(17,"hanako");
 		System.out.println(hanako.name);
 		System.out.println(hanako.age);
-
-
 
 	}
 

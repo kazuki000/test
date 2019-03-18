@@ -1,0 +1,19 @@
+package person;
+
+public class Robot {
+
+	public String name=null;
+
+	public void talk(){
+		System.out.println();
+	}
+
+	public void walk(){
+
+	}
+
+	public void run(){
+
+	}
+
+}

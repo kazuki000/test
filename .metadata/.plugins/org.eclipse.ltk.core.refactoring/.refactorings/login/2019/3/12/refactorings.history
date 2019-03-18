@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;struts2-core-2.3.37.jar&apos; to &apos;lib&apos;&#x0D;&#x0A;- 元のプロジェクト: &apos;login&apos;&#x0D;&#x0A;- 宛先要素: &apos;lib&apos;&#x0D;&#x0A;- オリジナル要素: &apos;struts2-core-2.3.37.jar&apos;" description="ファイルをコピー" element1="WebContent/WEB-INF/lib/struts2-core-2.3.37.jar" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1552844618707" target="/WebProj/WebContent/WEB-INF/lib" units="0" version="1.0"/>
+</session>
