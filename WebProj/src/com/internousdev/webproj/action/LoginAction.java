@@ -5,13 +5,14 @@ import com.opensymphony.xwork2.ActionSupport;
 public class LoginAction extends ActionSupport{
 
 	private String username;
+
 	private String password;
 
 	public String execute(){
 		return SUCCESS;
 	}
 
-	public String gerUsername(){
+	public String getUsername(){
 		return username;
 	}
 
@@ -26,6 +27,7 @@ public class LoginAction extends ActionSupport{
 	public void setPassword(String password){
 		this.password=password;
 	}
+
 
 
 }

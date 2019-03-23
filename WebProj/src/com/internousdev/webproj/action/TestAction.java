@@ -12,6 +12,7 @@ public class TestAction extends ActionSupport{
 		return SUCCESS;
 	}
 
+
 	public String getUsername(){
 		return username;
 	}
@@ -26,22 +27,6 @@ public class TestAction extends ActionSupport{
 
 	public void setPassword(String password){
 		this.password=password;
-
 	}
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

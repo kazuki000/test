@@ -1,0 +1,20 @@
+package com.internousdev.webproj3.action;
+
+import java.sql.Connection;
+
+import com.internousdev.webproj3.util.DBConnector;
+
+public class InquiryCompleteDAO {
+
+	public int insert(String name,String qtype,String body){
+
+		int ret=0;
+
+		DBConnector db=new DBConector();
+		Connection con=db.getConnection();
+
+
+		String sql="insert into inquiry values(?,?,?)";
+	}
+
+}

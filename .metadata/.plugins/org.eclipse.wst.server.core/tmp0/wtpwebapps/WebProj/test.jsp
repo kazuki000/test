@@ -8,11 +8,11 @@
 <title>TEST</title>
 </head>
 <body>
-
 <br>
 <s:property value="username"/>
 <br>
 <s:property value="password"/>
+
 
 </body>
 </html>

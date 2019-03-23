@@ -6,7 +6,6 @@ public class WelcomeAction extends ActionSupport{
 
 	public String execute(){
 		return SUCCESS;
-
 	}
 
 }
