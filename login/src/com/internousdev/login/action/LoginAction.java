@@ -23,12 +23,10 @@ public class LoginAction extends ActionSupport{
 		if(name.equals(dto.getName())){
 			if(password.equals(dto.getPassword())){
 				ret=SUCCESS;
-
 			}
 		}
 		return ret;
 	}
-
 
 	public String getName(){
 		return name;
@@ -45,20 +43,7 @@ public class LoginAction extends ActionSupport{
 	public void setPassword(String password){
 		this.password=password;
 	}
+
+
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

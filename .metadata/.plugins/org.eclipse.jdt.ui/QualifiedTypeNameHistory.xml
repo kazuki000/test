@@ -6,6 +6,7 @@
 <fullyQualifiedTypeName name="com.internousdev.webproj2.dao.LoginDAO"/>
 <fullyQualifiedTypeName name="com.mysql.jdbc.PreparedStatement"/>
 <fullyQualifiedTypeName name="java.sql.Array"/>
+<fullyQualifiedTypeName name="java.util.ArrayDeque"/>
 <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
 <fullyQualifiedTypeName name="java.sql.SQLException"/>
 </qualifiedTypeNameHistroy>
