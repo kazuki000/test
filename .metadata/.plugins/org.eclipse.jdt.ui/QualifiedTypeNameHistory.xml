@@ -4,9 +4,11 @@
 <fullyQualifiedTypeName name="java.lang.Class"/>
 <fullyQualifiedTypeName name="com.opensymphony.xwork2.Action"/>
 <fullyQualifiedTypeName name="com.internousdev.webproj2.dao.LoginDAO"/>
-<fullyQualifiedTypeName name="com.mysql.jdbc.PreparedStatement"/>
 <fullyQualifiedTypeName name="java.sql.Array"/>
 <fullyQualifiedTypeName name="java.util.ArrayDeque"/>
 <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
 <fullyQualifiedTypeName name="java.sql.SQLException"/>
+<fullyQualifiedTypeName name="com.mysql.jdbc.PreparedStatement"/>
+<fullyQualifiedTypeName name="java.sql.ResultSet"/>
+<fullyQualifiedTypeName name="java.sql.Connection"/>
 </qualifiedTypeNameHistroy>

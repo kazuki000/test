@@ -3,13 +3,9 @@ package com.internousdev.webproj4.dto;
 public class HelloStrutsDTO {
 
 	private int userId;
-
 	private String userName;
-
 	private String password;
-
 	private String result;
-
 
 	public int getUserId(){
 		return userId;

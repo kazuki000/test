@@ -6,18 +6,16 @@ import java.sql.SQLException;
 
 public class DBConnector {
 
-	private static String driverName="com.mysql.jdbc.Driver";
+	public static String driverName="com.mysql.jdbc.Driver";
 
-	private static String url="jdbc:mysql://localhost/testdb";
+	public static String url="jdbc:mysql://localhost/testdb";
 
-	private static String user="root";
+	public static String user="root";
 
-	private static String password="mysql";
+	public static String password="mysql";
 
 	public Connection getConnection(){
-
 		Connection con=null;
-
 		try{
 			Class.forName(driverName);
 			con=DriverManager.getConnection(url,user,password);
@@ -27,6 +25,7 @@ public class DBConnector {
 			e.printStackTrace();
 		}
 		return con;
+
 	}
 
 }

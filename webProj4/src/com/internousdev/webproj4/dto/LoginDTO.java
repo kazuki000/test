@@ -1,13 +1,8 @@
 package com.internousdev.webproj4.dto;
 
-
-
 public class LoginDTO {
-
-	public String username;
-
-	public String password;
-
+	private String username;
+	private String password;
 
 	public String getUsername(){
 		return username;

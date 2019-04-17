@@ -4,7 +4,6 @@ import com.internousdev.webproj3.dao.InquiryCompleteDAO;
 import com.opensymphony.xwork2.ActionSupport;
 
 public class InquiryCompleteAction extends ActionSupport{
-
 	private String name;
 	private String qtype;
 	private String body;
@@ -12,11 +11,11 @@ public class InquiryCompleteAction extends ActionSupport{
 	public String execute(){
 		String ret=ERROR;
 		InquiryCompleteDAO dao=new InquiryCompleteDAO();
-		int count=dao.insert(name,qtype,body);
-
+		int count=dao.insert(name, qtype, body);
 		if(count>0){
 			ret=SUCCESS;
 		}
+
 		return ret;
 	}
 

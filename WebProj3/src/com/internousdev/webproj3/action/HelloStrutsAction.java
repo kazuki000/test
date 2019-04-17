@@ -4,10 +4,9 @@ import com.internousdev.webproj3.dao.HelloStrutsDAO;
 import com.internousdev.webproj3.dto.HelloStrutsDTO;
 import com.opensymphony.xwork2.ActionSupport;
 
-
 public class HelloStrutsAction extends ActionSupport{
 
-	public String result;
+	private String result;
 
 	public String execute(){
 		String ret=ERROR;
@@ -22,18 +21,20 @@ public class HelloStrutsAction extends ActionSupport{
 
 		if(result.equals("MySQLと接続できます。")){
 			ret=SUCCESS;
-		}else{
-			ret=ERROR;
-		}
-		return ret;
+	    }else{
+	    	ret=ERROR;
+	    }
+
+	    return ret;
+
 	}
 
-	public String getResult(){
-		return result;
-	}
+    public String getResult(){
+    	return result;
+    }
 
-	public void setResult(String result){
-		this.result=result;
-	}
+    public void setResult(String result){
+    	this.result=result;
+    }
 
 }

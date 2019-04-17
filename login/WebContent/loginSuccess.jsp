@@ -8,6 +8,8 @@
       <title>ログイン成功画面</title>
 </head>
 <body>
+
       <h1>ログインに成功しました。</h1>
+
 </body>
 </html>

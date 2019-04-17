@@ -5,9 +5,11 @@
 <html>
 <head>
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-      <title>ログインに失敗しました。</title>
+      <title>ログイン失敗画面</title>
 </head>
 <body>
-      <h1>ログインに失敗しました。</h1>
+
+     <h1>ログインに失敗しました。</h1>
+
 </body>
 </html>

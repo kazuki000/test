@@ -1,14 +1,9 @@
 package com.internousdev.webproj3.dto;
 
 public class InquiryDTO {
-
-	public String name;
-
-	public String qtype;
-
-	public String body;
-
-
+	private String name;
+	private String qtype;
+	private String body;
 
 	public String getName(){
 		return name;

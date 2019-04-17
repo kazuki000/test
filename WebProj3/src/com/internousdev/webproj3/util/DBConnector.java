@@ -16,15 +16,17 @@ public class DBConnector {
 
 public Connection getConnection(){
 	Connection con=null;
-try{
-	Class.forName(driverName);
-	con=DriverManager.getConnection(url,user,password);
-}catch(ClassNotFoundException e){
-	e.printStackTrace();
-}catch(SQLException e){
-	e.printStackTrace();
-}
-return con;
+	try{
+		Class.forName(driverName);
+		con=DriverManager.getConnection(url,user,password);
+	}catch(ClassNotFoundException e){
+		e.printStackTrace();
+	}
+	catch(SQLException e){
+		e.printStackTrace();
+	}
+
+	return con;
 }
 
 }

@@ -6,7 +6,7 @@ public class LoginDTO {
 	private String password;
 
 	public int getId(){
-	return id;
+		return id;
 	}
 
 	public void setId(int id){
@@ -22,13 +22,11 @@ public class LoginDTO {
 	}
 
 	public String getPassword(){
-	return password;
-    }
+		return password;
+	}
 
 	public void setPassword(String password){
 		this.password=password;
 	}
-
-
 
 }

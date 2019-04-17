@@ -1,12 +1,8 @@
 package com.internousdev.webproj3.dto;
 
-
 public class LoginDTO {
-
 	private String username;
-
 	private String password;
-
 
 	public String getUsername(){
 		return username;
@@ -23,5 +19,7 @@ public class LoginDTO {
 	public void setPassword(String password){
 		this.password=password;
 	}
+
+
 
 }
