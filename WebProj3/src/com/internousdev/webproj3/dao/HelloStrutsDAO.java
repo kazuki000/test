@@ -9,34 +9,37 @@ import com.internousdev.webproj3.dto.HelloStrutsDTO;
 import com.internousdev.webproj3.util.DBConnector;
 
 public class HelloStrutsDAO {
+	public HelloStrutsDTO select(){
 
-public HelloStrutsDTO select(){
-	DBConnector db=new DBConnector();
-	Connection con=db.getConnection();
-	HelloStrutsDTO dto=new HelloStrutsDTO();
+		DBConnector db=new DBConnector();
+		Connection con=db.getConnection();
+		HelloStrutsDTO dto=new HelloStrutsDTO();
 
-	String sql="select * from users";
+		String sql="select * from users";
 
-	try{
-		PreparedStatement ps=con.prepareStatement(sql);
-		ResultSet rs=ps.executeQuery();
+		try{
+			PreparedStatement ps=con.prepareStatement(sql);
+			ResultSet rs=ps.executeQuery();
 
-		if(rs.next()){
-			dto.setResult("MySQLと接続できます。");
-		}else{
-			dto.setResult("MySQLと接続できません。");
+			if(rs.next()){
+				dto.setResult("ログインできます。");
+
+			}else{
+			    dto.setResult("ログインできません。");
+			}
+
+		}catch(SQLException e){
+			e.printStackTrace();
 		}
+		try{
+			con.close();
+		}catch(SQLException e){
+			e.printStackTrace();
+		}
+		return dto;
 
-	}catch(SQLException e){
-		e.printStackTrace();
+
+
 	}
-	try{
-		con.close();
-	}catch(SQLException e){
-		e.printStackTrace();
-	}
-
-	return dto;
-
- }
 }
+

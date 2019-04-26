@@ -12,24 +12,28 @@ public class TestAction extends ActionSupport{
 	private String username;
 	private String password;
 
-	private List<LoginDTO> loginDTOList=new ArrayList<LoginDTO>();
+	List<LoginDTO> loginDTOList=new ArrayList<LoginDTO>();
 
 	public String execute(){
-		String ret=ERROR;
+		String ret =ERROR;
 
-		TestDAO dao=new TestDAO();
-		int count=dao.insert(username,password);
+	    TestDAO dao=new TestDAO();
 
-		if(count>0){
-			ret=SUCCESS;
-		}else{
-			ret=ERROR;
-		}
+	    int count=dao.insert(username, password);
 
-		loginDTOList=dao.select(username, password);
+	    if(count>0){
+	    	ret=SUCCESS;
+	    }else{
+	    	ret=ERROR;
+	    }
 
-			return ret;
-		}
+	    loginDTOList=dao.select(username, password);
+
+	    	return ret;
+	    }
+
+
+
 
 		public String getUsername(){
 			return username;

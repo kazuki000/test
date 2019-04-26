@@ -11,36 +11,37 @@ public class LoginAction extends ActionSupport{
 
 	public String execute(){
 		String ret=ERROR;
+
 		System.out.println(username);
 		System.out.println(password);
-		LoginDAO dao=new LoginDAO();
 		LoginDTO dto=new LoginDTO();
+		LoginDAO dao=new LoginDAO();
 
-		dto=dao.select(username, password);
+		dto=dao.select(username,password);
+
 		if(this.username.equals(dto.getUsername()) && this.password.equals(dto.getPassword())){
 			ret=SUCCESS;
 		}else{
-			return ERROR;
+			ret=ERROR;
 		}
-
 		return ret;
 	}
 
-		public String getUsername(){
-			return username;
-		}
 
-		public void setUsername(String username){
-			this.username=username;
-		}
 
-		public String getPassword(){
-			return password;
-		}
-
-		public void setPassword(String password){
-			this.password=password;
-		}
+	public String getUsername(){
+		return username;
+	}
+	public void setUsername(String username){
+		this.username=username;
 	}
 
+	public String getPassword(){
+		return password;
+	}
 
+	public void setPassword(String password){
+		this.password=password;
+	}
+
+}

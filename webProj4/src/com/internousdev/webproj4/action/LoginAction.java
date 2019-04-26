@@ -2,55 +2,65 @@ package com.internousdev.webproj4.action;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
+
+import org.apache.struts2.interceptor.SessionAware;
 
 import com.internousdev.webproj4.dao.LoginDAO;
 import com.internousdev.webproj4.dto.LoginDTO;
 import com.opensymphony.xwork2.ActionSupport;
 
-public class LoginAction extends ActionSupport{
+public class LoginAction extends ActionSupport implements SessionAware{
 
 	private String username;
 	private String password;
-	private List<LoginDTO> LoginDTOList=new ArrayList<LoginDTO>();
 
-	public String execute(){
-		String ret=ERROR;
-		System.out.println(username);
-		System.out.println(password);
-		LoginDAO dao=new LoginDAO();
+    private List<LoginDTO> loginDTOList=new ArrayList<LoginDTO>();
+    private Map<String , Object>session;
 
-		LoginDTOList=dao.select(username,password);
+    public String execute(){
 
-		if(this.username.equals(LoginDTOList.get(0).getUsername()) && this.password.equals(LoginDTOList.get(0).getPassword())){
-			return SUCCESS;
-		}else{
-			ret=ERROR;
-		}
-		return ret;
-	}
+    	String ret=ERROR;
+    	System.out.println(username);
+    	System.out.println(password);
 
-	public String getUsername(){
-		return username;
-	}
+    	LoginDAO dao=new LoginDAO();
 
-	public void setUsername(String username){
-		this.username=username;
-	}
+    	loginDTOList=dao.select(username, password);
 
-	public String getPassword(){
-		return password;
-	}
+    	if(this.username.equals(loginDTOList.get(0).getUsername()) && this.password.equals(loginDTOList.get(0).getPassword())){
+    		session.put("loginDTOList", loginDTOList);
+    		ret=SUCCESS;
+    	}else{
+    		ret=ERROR;
+    	}
+    	return ret;
+    }
 
-	public void setPassword(String password){
-		this.password=password;
-	}
+    public String getUsername(){
+    	return username;
+    }
 
-	public List<LoginDTO> getLoginDTOList(){
-		return LoginDTOList;
-	}
+    public void setUsername(String username){
+    	this.username=username;
+    }
 
-	public void serLoginDTOList(List<LoginDTO> loginDTOList){
-		LoginDTOList=loginDTOList;
-	}
+    public String getPassword(){
+    	return password;
+    }
+
+    public void setPassword(String password){
+    	this.password=password;
+    }
+
+    public Map<String,Object> getSession(){
+    	return session;
+    }
+
+    public void setSession(Map<String,Object> session){
+    	this.session=session;
+    }
+
+
 
 }

@@ -1,0 +1,5 @@
+package com.internousdev.templete2.dto;
+
+public class BuyItemDTO {
+
+}

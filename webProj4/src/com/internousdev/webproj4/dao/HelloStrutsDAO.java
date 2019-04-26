@@ -12,13 +12,14 @@ import com.internousdev.webproj4.util.DBConnector;
 
 public class HelloStrutsDAO {
 
-	List<HelloStrutsDTO> helloStrutsDTOList=new ArrayList<HelloStrutsDTO>();
+	public List<HelloStrutsDTO> helloStrutsDTO=new ArrayList<HelloStrutsDTO>();
 
 	public List<HelloStrutsDTO> select(){
+
 		DBConnector db=new DBConnector();
 		Connection con=db.getConnection();
 
-		String sql="select * from users";
+		String sql="select * from users ";
 
 		try{
 			PreparedStatement ps=con.prepareStatement(sql);
@@ -26,22 +27,27 @@ public class HelloStrutsDAO {
 
 			while(rs.next()){
 				HelloStrutsDTO dto=new HelloStrutsDTO();
+
 				dto.setUserId(rs.getInt("user_id"));
 				dto.setUserName(rs.getString("user_name"));
 				dto.setPassword(rs.getString("password"));
 				dto.setResult("MySQLと接続できます。");
-				helloStrutsDTOList.add(dto);
+				helloStrutsDTO.add(dto);
 			}
 
+
 		}catch(SQLException e){
-				e.printStackTrace();
-			}
+			e.printStackTrace();
+		}
 		try{
 			con.close();
 		}catch(SQLException e){
 			e.printStackTrace();
 		}
-		return helloStrutsDTOList;
-	}
+		return helloStrutsDTO;
 
+
+	}
 }
+
+

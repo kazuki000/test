@@ -11,6 +11,7 @@ import com.internousdev.webproj5.dto.LoginDTO;
 import com.internousdev.webproj5.util.DBConnector;
 
 public class LoginDAO {
+
 	public String username;
 	public String password;
 
@@ -54,5 +55,9 @@ public class LoginDAO {
 		return loginDTOList;
 
 
-		}
+
+
+
+	}
+
 }

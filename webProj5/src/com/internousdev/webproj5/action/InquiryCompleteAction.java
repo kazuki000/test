@@ -16,22 +16,29 @@ public class InquiryCompleteAction extends ActionSupport implements SessionAware
 	private String qtype;
 	private String body;
 
-	List<InquiryDTO> inquiryDTOList=new ArrayList<InquiryDTO>();
-	private Map<String, Object> session;
+	public List<InquiryDTO> inquiryDTOList=new ArrayList<InquiryDTO>();
+	public Map<String,Object>session;
 
 	public String execute(){
 		String ret=ERROR;
-		InquiryCompleteDAO dao=new InquiryCompleteDAO();
-		int count=dao.insert(name, qtype, body);
-		if(count>0){
-			inquiryDTOList=dao.select();
-				session.put("inquiryDTOList", inquiryDTOList);
 
-				ret=SUCCESS;
-			}
-		   return ret;
+		InquiryCompleteDAO dao=new InquiryCompleteDAO();
+
+	     int count=dao.insert(name,qtype,body);
+
+	    	 if(count>0){
+	    		 inquiryDTOList=dao.select();
+	    		 session.put("inquiryDTOList",inquiryDTOList);
+	    		 ret=SUCCESS;
+
+
+	    	 }else{
+	    		 ret=ERROR;
 
 		}
+	    	 return ret;
+	}
+
 
 		public String getName(){
 			return name;

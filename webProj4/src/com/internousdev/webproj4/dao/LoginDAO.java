@@ -15,9 +15,11 @@ public class LoginDAO {
 	public String username;
 	public String password;
 
-	public List<LoginDTO> loginDTOList=new ArrayList<LoginDTO>();
 
-	public List<LoginDTO> select(String username,String password){
+	public  List<LoginDTO> loginDTOList=new ArrayList<LoginDTO>();
+
+	public List<LoginDTO> select(String username, String password){
+
 		DBConnector db=new DBConnector();
 		Connection con=db.getConnection();
 
@@ -25,8 +27,8 @@ public class LoginDAO {
 
 		try{
 			PreparedStatement ps=con.prepareStatement(sql);
-			ps.setString(1,username);
-			ps.setString(2,password);
+			ps.setString(1, username);
+			ps.setString(2, password);
 			ResultSet rs=ps.executeQuery();
 
 			while(rs.next()){
@@ -34,18 +36,23 @@ public class LoginDAO {
 				dto.setUsername(rs.getString("user_name"));
 				dto.setPassword(rs.getString("password"));
 				loginDTOList.add(dto);
+
 			}
-		}catch(SQLException e){
+			if(loginDTOList.size()<=0){
+				LoginDTO dto=new LoginDTO();
+				dto.setUsername("該当なし");
+				dto.setPassword("該当なし");
+			}
+			}catch(SQLException e){
 				e.printStackTrace();
-			}
+
+		}
 		try{
 			con.close();
 		}catch(SQLException e){
 			e.printStackTrace();
 		}
-
 		return loginDTOList;
-
 	}
 
 }

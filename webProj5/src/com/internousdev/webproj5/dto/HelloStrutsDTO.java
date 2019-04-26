@@ -27,7 +27,7 @@ public class HelloStrutsDTO {
 		return password;
 	}
 
-	public void setPassoword(String password){
+	public void setPassword(String password){
 		this.password=password;
 	}
 

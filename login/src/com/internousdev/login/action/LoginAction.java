@@ -15,18 +15,22 @@ public class LoginAction extends ActionSupport{
 
 		String ret=ERROR;
 
-		LoginDAO dao=new LoginDAO();
 		LoginDTO dto=new LoginDTO();
-
+		LoginDAO dao=new LoginDAO();
 		dto=dao.select(name,password);
 
 		if(name.equals(dto.getName())){
 			if(password.equals(dto.getPassword())){
 				ret=SUCCESS;
+
 			}
+		}else{
+			ret=ERROR;
 		}
-	return ret;
+		return ret;
 	}
+
+
 
 	public String getName(){
 		return name;

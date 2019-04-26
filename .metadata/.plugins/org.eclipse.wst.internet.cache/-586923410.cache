@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="refresh" content="60;URL=http://r.wi2.mobi/login">
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
+<meta name="viewport" content="width=device-width,maximum-scale=1,user-scalable=yes">
+<title>Cookie Error</title>
+
+<link rel="shortcut icon" href="http://wi2.co.jp/favicon.ico">
+<link rel="stylesheet" href="css/cookie_error.css" type="text/css">
+<script type="text/JavaScript" src="js/static-min.js"></script>
+</head>
+
+<body>
+
+	<header>
+		<div id="logoArea">
+			<h1><!-- place logo image here --></h1>
+		</div>
+		<div id="barArea">
+		</div>
+	</header>
+
+	<div id="wrap">
+
+		<div id="tabHolder">
+
+			<section id="wi2user">
+				<div class="contents">
+
+					<a href="http://r.wi2.mobi/login" id="login_btn_wi2" class="over button">RETRY</a>
+
+					<p id="alertArea">
+
+						<span id="alert_msg"></span>
+						<span id="cookie_error_message">
+							Please check that your browser is set to accept Cookies. After changing the setting, please press the "RETRY" button above.<br/>ご利用中のブラウザがCookieを受け入れる設定になっているか、確認してください。設定を変更後、上の"RETRY"ボタンを押下してください。
+						</span>
+					</p>
+				</div>
+				<!-- / .contents -->
+
+			</section>
+			<!-- / #wi2user -->
+
+		</div>
+		<!-- / #tabHolder -->
+
+	</div>
+	<!-- / #wrap -->
+
+	<div id="copyrightArea">
+		<p>Copyright &copy; WIRE AND WIRELESS All Rights Reserved.</p>
+	</div>
+
+</body>
+</html>

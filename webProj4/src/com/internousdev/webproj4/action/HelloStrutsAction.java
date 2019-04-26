@@ -9,28 +9,32 @@ import com.opensymphony.xwork2.ActionSupport;
 
 public class HelloStrutsAction extends ActionSupport{
 
-	private List<HelloStrutsDTO> HelloStrutsDTOList=new ArrayList<HelloStrutsDTO>();
+    public List<HelloStrutsDTO> helloStrutsDTOList=new ArrayList<HelloStrutsDTO>();
 
 	public String execute(){
+
 		String ret=ERROR;
+
 		HelloStrutsDAO dao=new HelloStrutsDAO();
 
-		HelloStrutsDTOList=dao.select();
+		helloStrutsDTOList=dao.select();
 
-		if(HelloStrutsDTOList.size()>0){
+		if(helloStrutsDTOList.size()>0){
 			ret=SUCCESS;
 		}else{
 			ret=ERROR;
 		}
 		return ret;
+
+
 	}
 
 	public List<HelloStrutsDTO> getHelloStrutsDTOList(){
-		return HelloStrutsDTOList;
+		return helloStrutsDTOList;
 	}
 
 	public void setHelloStrutsDTOList(List<HelloStrutsDTO> helloStrutsDTOList){
-		HelloStrutsDTOList=helloStrutsDTOList;
+		this.helloStrutsDTOList=helloStrutsDTOList;
 	}
-
 }
+

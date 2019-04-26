@@ -2,8 +2,7 @@ package com.internousdev.webproj3.dto;
 
 public class HelloStrutsDTO {
 
-	private String result;
-
+	private  String result;
 
 	public String getResult(){
 		return result;

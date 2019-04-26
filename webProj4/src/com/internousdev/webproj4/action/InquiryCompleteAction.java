@@ -9,24 +9,35 @@ import com.opensymphony.xwork2.ActionSupport;
 
 
 public class InquiryCompleteAction extends ActionSupport{
+
 	private String name;
 	private String qtype;
 	private String body;
 
-	List<InquiryDTO>inquiryDTOList=new ArrayList<InquiryDTO>();
+	List<InquiryDTO> inquiryDTOList=new ArrayList<InquiryDTO>();
 
 	public String execute(){
-
 		String ret=ERROR;
+
 		InquiryCompleteDAO dao=new InquiryCompleteDAO();
-		int count=dao.insert(name, qtype, body);
+
+		int count=dao.insert(name,qtype,body);
+
 		if(count>0){
 			inquiryDTOList=dao.select();
-
 			ret=SUCCESS;
+
 		}
 		return ret;
+
 	}
+
+
+
+
+
+
+
 
 	public String getName(){
 		return name;
