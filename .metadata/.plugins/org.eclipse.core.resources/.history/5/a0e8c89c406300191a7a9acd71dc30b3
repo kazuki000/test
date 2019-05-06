@@ -1,8 +1,0 @@
-package com.internousdev.login2.action;
-
-import java.sql.SQLException;
-import com.internousdev.ecsite2.d
-
-public class LoginDAO {
-
-}

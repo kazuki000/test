@@ -1,0 +1,22 @@
+package com.internousdev.ecsite.action;
+
+import java.sql.SQLException;
+import com.opensymphony.xwork2.ActionSupport;
+import com.internousdev.ecsite.dao.ItemListDeleteCompleteDAO;
+
+public class ItemListDeleteCompleteAction extends ActionSupport{
+
+	ItemListDeleteCompleteDAO itemListDeleteCompleteDAO=new ItemListDeleteCompleteDAO();
+	public String execute(){
+
+	itemListDeleteCompleteDAO.delete();
+
+	}
+
+
+
+
+		}
+	}
+
+

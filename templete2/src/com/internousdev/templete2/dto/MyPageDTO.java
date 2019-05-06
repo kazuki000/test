@@ -23,7 +23,7 @@ public class MyPageDTO {
 		this.totalPrice=totalPrice;
 	}
 
-	public String geTotalCount(){
+	public String getTotalCount(){
 		return this.totalCount;
 	}
 

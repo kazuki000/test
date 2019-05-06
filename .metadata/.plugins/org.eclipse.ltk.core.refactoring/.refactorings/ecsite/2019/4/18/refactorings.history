@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;LoginDTO.java&apos; to &apos;ecsite2/src/com.internousdev.ecsite2.dto&apos;&#x0D;&#x0A;- 元のプロジェクト: &apos;ecsite&apos;&#x0D;&#x0A;- 宛先要素: &apos;ecsite2/src/com.internousdev.ecsite2.dto&apos;&#x0D;&#x0A;- オリジナル要素: &apos;com.internousdev.ecsite.dto.LoginDTO.java&apos;" description="コンパイル単位をコピー" destination="=ecsite2/src&lt;com.internousdev.ecsite2.dto" element1="/src&lt;com.internousdev.ecsite.dto{LoginDTO.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1556607101953" units="1" version="1.0"/>
+</session>

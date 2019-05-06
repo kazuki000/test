@@ -16,4 +16,7 @@
 <fullyQualifiedTypeName name="com.sun.jndi.url.corbaname.corbanameURLContextFactory"/>
 <fullyQualifiedTypeName name="java.lang.Integer"/>
 <fullyQualifiedTypeName name="java.sql.SQLException"/>
+<fullyQualifiedTypeName name="com.internousdev.ecsite2.util.DateUtil"/>
+<fullyQualifiedTypeName name="com.internousdev.ecsite2.util.DBConnector"/>
+<fullyQualifiedTypeName name="com.internousdev.ecsite.util.DBConnector"/>
 </qualifiedTypeNameHistroy>

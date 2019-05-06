@@ -1,0 +1,20 @@
+package jp.co.internous.action;
+
+public class Main {
+
+	public static void main(String[]args){
+
+		System.out.println("meshodA");
+		methodB();
+
+
+	}
+
+	public static void methodB(){
+		System.out.println("こんにちは");
+	}
+
+	public static void methodA(){
+		System.out.println("こんばんわ");
+	}
+}
