@@ -78,7 +78,7 @@
                                    </td>
                                    <td>
                                           <s:property value="session.buyItem_price"/><span>円</span>
-                                   </td>
+                                   </td>	<!-- LoginActionのsessionで記憶した値を表示する。 -->
                             </tr>
                             <tr>
                                    <td>

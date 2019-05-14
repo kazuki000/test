@@ -19,6 +19,7 @@ public class BuyItemConfirmAction extends ActionSupport implements SessionAware{
 				       session.get("total_price").toString(),
 				       session.get("count").toString(),
 				       session.get("pay").toString());
+		/* sessionで習得した情報をDAOのメソッドに渡しています。 */
 
 		String result=SUCCESS;
 		return result;

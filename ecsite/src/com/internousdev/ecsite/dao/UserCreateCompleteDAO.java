@@ -25,11 +25,12 @@ public class UserCreateCompleteDAO {
 		preparedStatement.setString(3,userName);
 		preparedStatement.setString(4,dateUtil.getDate());
         preparedStatement.execute();
+        /* Actionクラスから送られてきた値をセットする。 */
 
 	}catch(Exception e){
 		e.printStackTrace();
 	}finally{
 		connection.close();
-	  }
+	  }/* DBとの接続を切る。 */
 	 }
 	}

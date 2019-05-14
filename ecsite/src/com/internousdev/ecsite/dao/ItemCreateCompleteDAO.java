@@ -21,7 +21,7 @@ public class ItemCreateCompleteDAO {
 			PreparedStatement preparedStatement=connection.prepareStatement(sql);
 			preparedStatement.setString(1, itemName);
 			preparedStatement.setString(2, itemPrice);
-			preparedStatement.setString(3,itemPrice);
+			preparedStatement.setString(3,itemStock);
 			preparedStatement.setString(4,dateUtil.getDate());
 
 			preparedStatement.execute();

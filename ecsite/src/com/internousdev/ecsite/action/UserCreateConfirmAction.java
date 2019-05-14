@@ -28,6 +28,10 @@ public class UserCreateConfirmAction extends ActionSupport implements SessionAwa
     		setErrorMessage("未入力の項目があります。");
     		result=ERROR;
     	}
+    	/* 未入力項目が有無の確認をしています
+    	 * 未入力項目があればelse処理に進みエラーメッセージを表示させる。
+    	 * sessionで入力情報を記憶させる。 */
+
     	return result;
     }
 

@@ -21,6 +21,7 @@ public class ItemListDeleteCompleteAction extends ActionSupport{
 	}else if(res==0){
 		result=ERROR;
 	}
+	/* 削除件数の確認 */
 
 	return result;
 	}

@@ -27,6 +27,7 @@ public class ItemCreateConfirmAction extends ActionSupport implements SessionAwa
 		}else{
 			setErrorMassage("未入力の項目があります。");
 			result=ERROR;
+		/* 未入力項目が有無の確認をしています。*/
 
 		}
 		return result;

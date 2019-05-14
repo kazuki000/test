@@ -14,6 +14,7 @@ public class LogoutAction extends ActionSupport implements SessionAware{
 		session.clear();
 		return SUCCESS;
 	}
+	/* session.clearメソッドでkeyと値が初期化される。そのためログイン前の状態になる。 */
 
 	@Override
 	public void setSession(Map<String,Object>session){

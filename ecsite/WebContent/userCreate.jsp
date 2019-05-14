@@ -73,6 +73,7 @@
                                   <s:property value="errorMessage" escape="false"/>
 
                     </s:if>
+                    <!-- もしerrorMessageに値が入って入れば処理に移る、errorMessageに格納されている値を表示する。 -->
 
                     <table>
                     <s:form action="UserCreateConfirmAction">

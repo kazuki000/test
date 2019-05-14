@@ -24,6 +24,7 @@ public class ItemListAction extends ActionSupport{
 		}else{
 			result=ERROR;
 		}
+		/* アイテム情報が入っているか否かの確認 */
 
 		return result;
 

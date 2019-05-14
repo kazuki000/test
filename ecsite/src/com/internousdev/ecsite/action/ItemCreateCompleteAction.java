@@ -22,8 +22,10 @@ public class ItemCreateCompleteAction extends ActionSupport implements SessionAw
 					session.get("itemPrice").toString(),
 					session.get("itemStock").toString());
 		String result=SUCCESS;
+		/* sessionで習得した値を引き渡す。 */
 
 		return result;
+		/* 結果をresultへ */
 
 
 	}

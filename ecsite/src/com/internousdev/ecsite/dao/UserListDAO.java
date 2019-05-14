@@ -30,6 +30,8 @@ public class UserListDAO {
 				dto.setUserName(resultSet.getString("user_name"));
 				userInfoDTO.add(dto);
 			}
+			/* カーソルが次の行に項目があればwhile文の処理に進む。DBから習得した情報をdtoに格納した後、ArrayListに格納している。while文のためこの処理を繰り返す。 */
+
 		}catch(Exception e){
 			e.printStackTrace();
 		}finally{

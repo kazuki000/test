@@ -25,6 +25,7 @@ public class UserListAction extends ActionSupport{
 		}else{
 			result=ERROR;
 		}
+		/* ユーザー情報の有無の確認 */
 		return result;
 	}
 

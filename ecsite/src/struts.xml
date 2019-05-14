@@ -17,8 +17,9 @@
        </action>
 
        <action name="LoginAction" class="com.internousdev.ecsite.action.LoginAction" method="execute">
+       <result name="admin">admin.jsp</result>
        <result name="success">buyItem.jsp</result>
-       <result name="error">login.jsp</result>
+	   <result name="error">login.jsp</result>
        </action>
 
        <action name="UserCreateAction" class="com.internousdev.ecsite.action.UserCreateAction" method="execute">

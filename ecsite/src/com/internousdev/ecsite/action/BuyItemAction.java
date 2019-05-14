@@ -27,6 +27,11 @@ public class BuyItemAction extends ActionSupport implements SessionAware{
 		}
 		return result;
 	}
+	/* sessionでkeyを"count"にvalueをcountで記憶。
+	 * sessionから"count"と"buyItem_price"を習得して一度String型に変換してからInt型に変換する。
+	 * sessionでkeyを"toal_price",valueをintCount * intPriceで計算式を作る。
+	 * if文でjspから送られてきた情報をもとに次のjspのページへと表示させる内容を記憶する。*/
+
 
 
         public void setCount(int count){

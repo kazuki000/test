@@ -20,6 +20,7 @@ public class UserListDeleteCompleteAction extends ActionSupport{
 		}else if(res==0){
 			result=ERROR;
 		}
+		/* 削除情報の有無の確認 */
 		return result;
 	}
 

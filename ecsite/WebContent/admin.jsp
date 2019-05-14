@@ -107,7 +107,8 @@
 					<s:submit value="   一覧   "/>
 				</s:form>
 			</div>
-
+			<p>ログアウトする場合は
+				<a href='<s:url action="LoginAction"/>'>こちら</a></p>
 
 		</div>
 		<div id="footer">

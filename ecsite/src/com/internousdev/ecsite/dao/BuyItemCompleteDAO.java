@@ -21,7 +21,7 @@ public class BuyItemCompleteDAO {
 			preparedStatement.setString(3,total_count);
 			preparedStatement.setString(4,user_master_id);
 			preparedStatement.setString(5,pay);
-			preparedStatement.setString(6,dateUtil.getDate());
+			preparedStatement.setString(6,dateUtil.getDate()); /* 現在の日時の習得 */
 			preparedStatement.execute();
 		}catch(Exception e){
 			e.printStackTrace();
